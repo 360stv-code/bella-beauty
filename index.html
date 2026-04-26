@@ -60,6 +60,7 @@
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},
     {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}
   ],
+  "description": "Studio premium de sobrancelhas no Tatuapé — Edifício Platina, o mais alto de São Paulo. Design de sobrancelhas, extensão de cílios, lash lifting, tratamento de estrias e estética a domicílio nos Jardins, Itaim Bibi, Vila Nova Conceição, Moema e Alphaville. Atendimento às segundas-feiras disponível.",
   "hasMap": "https://maps.app.goo.gl/HB8VDCJ21fQyHMYeA",
   "sameAs": [
     "https://www.instagram.com/bellaabeauti/",
@@ -254,13 +255,13 @@ body{background-color:var(--black);color:var(--cream);line-height:1.6;font-famil
 <!-- ========== TOP BAR ========== -->
 <div class="fixed top-0 z-[70] w-full bg-[#c9a55a] py-1.5 text-center overflow-hidden">
   <div class="text-[8px] md:text-[10px] font-label tracking-[0.18em] text-black uppercase font-bold px-4 whitespace-nowrap overflow-hidden text-ellipsis">
-    📍 Jardins · Itaim Bibi · Vila Nova Conceição · Tatuapé · Moema · Vila Mariana · Perdizes · Alphaville
+    📍 Tatuapé · Jardins · Itaim Bibi · Vila Nova Conceição · Moema · Vila Mariana · Perdizes · Alphaville
   </div>
 </div>
 
 <!-- ========== NAVIGATION ========== -->
 <nav class="fixed top-7 z-[60] w-full glass-header flex justify-between items-center px-4 md:px-8 py-3 md:py-5 transition-all duration-300">
-  <div class="text-base md:text-xl font-display tracking-tighter text-[#c9a55a] font-light">BELLA BEAUTY CLUB</div>
+  <div class="text-base md:text-xl font-display tracking-tighter text-[#c9a55a] font-light">BELLA BEAUTY</div>
   <!-- Desktop Nav -->
   <div class="hidden lg:flex items-center gap-8">
     <a class="text-white/60 hover:text-[#c9a55a] transition-colors font-label text-[10px] tracking-widest uppercase" href="#main-hero">Início</a>
@@ -297,7 +298,7 @@ body{background-color:var(--black);color:var(--cream);line-height:1.6;font-famil
 <div class="fixed inset-0 z-[100] bg-[#060606] translate-x-full lg:hidden" id="mobile-nav">
   <div class="flex flex-col h-full p-6">
     <div class="flex justify-between items-center mb-10">
-      <div class="text-base font-display tracking-tighter text-[#c9a55a]">BELLA BEAUTY CLUB</div>
+      <div class="text-base font-display tracking-tighter text-[#c9a55a]">BELLA BEAUTY</div>
       <button aria-label="Fechar Menu" class="text-[#c9a55a] p-2" id="menu-close">
         <span class="material-symbols-outlined text-3xl">close</span>
       </button>
@@ -334,7 +335,7 @@ body{background-color:var(--black);color:var(--cream);line-height:1.6;font-famil
     </div>
     <div class="mt-auto pt-8 border-t border-[#c9a55a]/20 text-center">
       <div class="text-[9px] font-label tracking-[0.18em] text-[#c9a55a] uppercase font-bold mb-2">
-        📍 Jardins · Itaim Bibi · V.N. Conceição
+        📍 Tatuapé · Jardins · Itaim Bibi · V.N. Conceição
       </div>
       <div class="text-[9px] font-label tracking-[0.18em] text-[#c9a55a]/70 uppercase">
         Tatuapé · Moema · V. Mariana · Perdizes · Alphaville
@@ -358,6 +359,9 @@ menuClose.addEventListener('click',closeMenu);
   <section class="flex flex-col items-center justify-center min-h-[55vh] md:min-h-[75vh] bg-[#060606] px-6 text-center pt-28 md:pt-44 pb-12 relative overflow-hidden">
     <!-- Subtle background texture -->
     <div class="absolute inset-0 opacity-5" style="background-image:radial-gradient(circle at 50% 50%, #c9a55a 0%, transparent 60%);"></div>
+    <span class="urgency-badge text-[8px] md:text-[10px] font-label tracking-[0.25em] uppercase px-4 py-2 mb-6 reveal">
+      ✦ Vagas Limitadas · Agende Hoje
+    </span>
     <h1 class="font-display text-[1.9rem] sm:text-5xl md:text-6xl lg:text-7xl text-[#c9a55a] uppercase tracking-[0.08em] md:tracking-[0.15em] font-light leading-tight reveal">
       Sobrancelhas SP<span class="block">Bella Beauty</span>
     </h1>
@@ -366,6 +370,9 @@ menuClose.addEventListener('click',closeMenu);
     </p>
     <div class="mt-4 text-[#c9a55a]/70 font-label text-[9px] md:text-[11px] tracking-[0.25em] uppercase reveal">
       Tatuapé · Jardins · Itaim Bibi · Moema · e mais
+    </div>
+    <div class="mt-2 text-white/30 font-label text-[8px] md:text-[9px] tracking-[0.2em] uppercase reveal">
+      📍 Studio: Edifício Platina — O Mais Alto de SP · Tatuapé
     </div>
     <div class="w-16 md:w-24 h-px bg-[#c9a55a] mt-8 opacity-40 reveal"></div>
     <div class="mt-8 flex flex-col sm:flex-row gap-4 reveal">
@@ -395,7 +402,7 @@ menuClose.addEventListener('click',closeMenu);
       <div class="w-full md:flex-1 text-left order-1 md:order-2 reveal">
         <span class="text-[#c9a55a] uppercase text-[9px] md:text-[10px] tracking-[0.35em] block mb-4">Conheça o Studio</span>
         <h2 class="text-2xl md:text-4xl font-display font-light mb-6 text-white leading-tight">Excelência em cada detalhe</h2>
-        <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-4">No Bella Beauty, acreditamos que a beleza é uma forma de expressão única. Nosso studio em São Paulo oferece um ambiente acolhedor e procedimentos de alta tecnologia para realçar o que você tem de melhor.</p>
+        <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-4">No Bella Beauty, acreditamos que a beleza é uma forma de expressão única. Nosso studio está localizado no <strong class="text-[#c9a55a]/80 font-normal">Edifício Platina — o mais alto de São Paulo</strong>, no Tatuapé, oferecendo um ambiente sofisticado e procedimentos de alta tecnologia para realçar o que você tem de melhor.</p>
         <p class="text-zinc-400 text-sm md:text-base leading-relaxed mb-6">Nossa missão é proporcionar não apenas resultados estéticos, mas uma experiência completa de cuidado e autoestima — seja em nosso espaço físico no <strong class="text-[#c9a55a]/80 font-normal">Tatuapé</strong> ou no conforto e privacidade do seu lar, nos <strong class="text-[#c9a55a]/80 font-normal">Jardins, Itaim Bibi, Vila Nova Conceição</strong> e outros bairros nobres de São Paulo.</p>
         <a href="https://wa.me/5511952412499?text=Ol%C3%A1!%20Quero%20conhecer%20os%20servi%C3%A7os%20da%20Bella%20Beauty%20Club" target="_blank" rel="noopener"
           class="inline-flex items-center gap-2 text-[#c9a55a] border-b border-[#c9a55a]/30 pb-1 text-[10px] font-label tracking-widest uppercase hover:text-white transition-colors">
@@ -569,7 +576,7 @@ menuClose.addEventListener('click',closeMenu);
       <article class="reveal md:col-span-2">
         <div class="text-center mb-8">
           <span class="text-[#c9a55a] font-label text-[8px] tracking-[0.3em] uppercase">Corporal</span>
-          <h3 class="text-white font-headline text-xl md:text-3xl mt-2 mb-2">Protocolo Estria Free</h3>
+          <h3 class="text-white font-headline text-xl md:text-3xl mt-2 mb-2">Protocolo Estria Free — Tatuapé · SP</h3>
           <p class="text-zinc-500 text-sm max-w-2xl mx-auto">Resultados reais, documentados. <strong class="text-white font-normal">Fotos da nossa própria clientela</strong> — sem filtro, sem edição.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-8">
@@ -598,7 +605,7 @@ menuClose.addEventListener('click',closeMenu);
         </div>
         <div class="max-w-2xl mx-auto text-center">
           <div class="urgency-badge inline-block px-4 py-2 text-[9px] font-label tracking-[0.2em] uppercase mb-5">✓ Resultados Visíveis a partir da 2ª Sessão</div>
-          <p class="text-zinc-500 text-sm md:text-base leading-relaxed mb-3">Tecnologia de ponta para redução e atenuação de estrias. O Protocolo Estria Free estimula a regeneração tecidual profunda — indicado para estrias abdominais, glúteos, coxas e seios, em fase ativa <em>(vermelhas/roxas)</em> ou madura <em>(brancas/prateadas)</em>.</p>
+          <p class="text-zinc-500 text-sm md:text-base leading-relaxed mb-3">Tratamento de estrias no Tatuapé — tecnologia de ponta para redução e atenuação de estrias abdominais, glúteos, coxas e seios, em fase ativa <em>(vermelhas/roxas)</em> ou madura <em>(brancas/prateadas)</em>. O Protocolo Estria Free estimula a regeneração tecidual profunda com resultados visíveis a partir da 2ª sessão. Atendemos também a domicílio nos bairros nobres de São Paulo.</p>
           <p class="text-zinc-500 text-sm leading-relaxed mb-6">Protocolo 100% personalizado, sessão a sessão, com acompanhamento fotográfico dos resultados.</p>
           <a href="https://wa.me/5511952412499?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20Protocolo%20Estria%20Free%20%E2%9C%A8" target="_blank" rel="noopener"
             class="inline-flex items-center gap-2 btn-gold text-white px-8 py-4 text-[10px] md:text-[11px] font-label tracking-[0.25em] uppercase">
@@ -707,7 +714,7 @@ menuClose.addEventListener('click',closeMenu);
         <div class="prose-custom text-zinc-400 text-sm leading-relaxed space-y-4 mb-6">
           <p>O segredo está no mapeamento facial personalizado: cada rosto possui proporções únicas, e um bom designer não cria sobrancelhas "da moda" — ele cria sobrancelhas que <em class="text-zinc-300">pertencem</em> àquele rosto. É a diferença entre uma sobrancelha bonita e uma sobrancelha transformadora.</p>
           <p>Técnicas como a <strong class="text-zinc-300 font-medium">laminação de sobrancelhas</strong>, o <strong class="text-zinc-300 font-medium">fio a fio com henna</strong> e a <strong class="text-zinc-300 font-medium">micropigmentação natural</strong> são as preferidas das celebridades brasileiras justamente por oferecerem resultados duradouros e extremamente naturais. Manu Gavassi, Bruna Marquezine e Grazi Massafera são exemplos de estrelas cujos olhares são potencializados por sobrancelhas bem trabalhadas.</p>
-          <p>No Bella Beauty Club, trazemos esse mesmo nível de expertise para você — seja em nosso studio ou <strong class="text-zinc-300 font-medium">diretamente na sua casa</strong>, nos Jardins, Itaim Bibi, Vila Nova Conceição e demais bairros nobres de São Paulo.</p>
+          <p>No Bella Beauty, trazemos esse mesmo nível de expertise para você — seja em nosso studio no <strong class="text-zinc-300 font-medium">Tatuapé</strong> ou <strong class="text-zinc-300 font-medium">diretamente na sua casa</strong>, nos Jardins, Itaim Bibi, Vila Nova Conceição e demais bairros nobres de São Paulo.</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="https://wa.me/5511952412499?text=Ol%C3%A1!%20Li%20sobre%20design%20de%20sobrancelhas%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener"
@@ -837,9 +844,31 @@ menuClose.addEventListener('click',closeMenu);
 
 <!-- ========== FOOTER ========== -->
 <footer class="w-full px-6 md:px-12 pt-12 md:pt-16 pb-24 md:pb-16 flex flex-col items-center gap-6 bg-[#ece8e0]">
-  <div class="text-lg md:text-2xl font-display text-black tracking-widest uppercase">BELLA BEAUTY CLUB</div>
-  <div class="text-[9px] md:text-[10px] font-label tracking-[0.2em] text-[#775a16] uppercase font-bold text-center">📍 Jardins · Itaim Bibi · Vila Nova Conceição</div>
-  <div class="text-[8px] md:text-[9px] font-label tracking-[0.15em] text-[#775a16]/70 uppercase text-center">Tatuapé · Moema · Vila Mariana · Perdizes · Alphaville · São Paulo, SP</div>
+  <div class="text-lg md:text-2xl font-display text-black tracking-widest uppercase">BELLA BEAUTY</div>
+  <div class="text-[9px] md:text-[10px] font-label tracking-[0.2em] text-[#775a16] uppercase font-bold text-center">📍 Tatuapé · Jardins · Itaim Bibi · Vila Nova Conceição</div>
+  <div class="text-[8px] md:text-[9px] font-label tracking-[0.15em] text-[#775a16]/70 uppercase text-center">Moema · Vila Mariana · Perdizes · Alphaville · São Paulo, SP</div>
+
+  <!-- Endereço completo SEO -->
+  <div class="text-center">
+    <p class="text-[#775a16] font-label text-[9px] md:text-[10px] tracking-[0.2em] uppercase font-bold mb-1">Studio Tatuapé</p>
+    <p class="text-zinc-600 font-label text-[9px] md:text-[10px] tracking-[0.15em] text-center">R. Bom Sucesso, 220 — Sala 1703 · Edifício Platina · Tatuapé · São Paulo - SP · CEP 03305-000</p>
+    <p class="text-zinc-500 font-label text-[8px] tracking-[0.15em] text-center mt-1">Seg a Sex: 09h às 20h · Sáb: 09h às 17h · <span class="text-[#775a16]">Atendimento às segundas-feiras disponível</span></p>
+  </div>
+
+  <!-- Mapa Google incorporado -->
+  <div class="w-full max-w-2xl rounded overflow-hidden" style="height:280px;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1!2d-46.5799849!3d-23.542729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5921a9dcea6d%3A0xc134c358dec3d6d1!2sSobrancelhas%20SP%20%7C%20Bella%20beauty%20%7C%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1714000000000"
+      width="100%"
+      height="280"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Bella Beauty Club — Studio Tatuapé São Paulo">
+    </iframe>
+  </div>
+
   <div class="flex flex-wrap justify-center gap-2 text-[8px] md:text-[10px] font-label tracking-widest text-zinc-500">
     <span>(11) 95241-2499</span>
     <span class="opacity-30">·</span>
@@ -857,8 +886,8 @@ menuClose.addEventListener('click',closeMenu);
     <a class="text-[#7f7667] hover:text-[#775a16] underline-offset-4 underline font-label text-[8px] md:text-[10px] tracking-widest uppercase" href="#">Trabalhe Conosco</a>
   </div>
   <div class="w-full max-w-xs h-px bg-[#775a16]/10"></div>
-  <div class="text-[#7f7667] font-label text-[8px] md:text-[9px] tracking-widest text-center leading-loose">© 2025 BELLA BEAUTY CLUB. THE MODERN ATELIER. · São Paulo, SP</div>
-  <p class="text-[#7f7667]/40 font-label text-[7px] tracking-widest text-center">Sobrancelhas perto de mim · Design de sobrancelhas Tatuapé · Cílios a domicílio São Paulo · Sobrancelhas Jardins · Extensão de cílios Itaim Bibi</p>
+  <div class="text-[#7f7667] font-label text-[8px] md:text-[9px] tracking-widest text-center leading-loose">© 2025 BELLA BEAUTY. THE MODERN ATELIER. · São Paulo, SP</div>
+  <p class="text-[#7f7667]/40 font-label text-[7px] tracking-widest text-center">Sobrancelhas perto de mim · Design de sobrancelhas Tatuapé · Estrias Tatuapé · Cílios a domicílio São Paulo · Sobrancelhas Jardins · Extensão de cílios Itaim Bibi · Tratamento de estrias SP</p>
 </footer>
 
 </div><!-- /container-wrapper -->
