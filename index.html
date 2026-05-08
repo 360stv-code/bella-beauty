@@ -47,6 +47,13 @@
   "telephone": "+55-11-95241-2499",
   "priceRange": "$$$$",
   "image": "https://sobrancelhasemsaopaulo.com.br/foto-fundadora.jpg",
+  "photo": [
+    "https://sobrancelhasemsaopaulo.com.br/trabalho-sobrancelhas-design-tatuape.jpg",
+    "https://sobrancelhasemsaopaulo.com.br/trabalho-sobrancelhas-lash-lifting-tatuape.jpg",
+    "https://sobrancelhasemsaopaulo.com.br/trabalho-cilios-volume-tatuape.jpg",
+    "https://sobrancelhasemsaopaulo.com.br/trabalho-cilios-fio-a-fio-tatuape.jpg",
+    "https://sobrancelhasemsaopaulo.com.br/trabalho-cilios-volume-brasileiro-tatuape.jpg"
+  ],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "R. Bom Sucesso, 220 - Sala 1703",
@@ -303,6 +310,78 @@ body{background-color:var(--black);color:var(--cream);line-height:1.6;font-famil
 .trust-item{display:flex;align-items:center;gap:6px;}
 .trust-stars{color:#fbbf24;letter-spacing:1px;}
 
+/* GALERIA DE TRABALHOS REAIS - Scroll horizontal mobile / Grid desktop */
+.gallery-scroll{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  padding:0 16px 8px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.gallery-scroll::-webkit-scrollbar{display:none;}
+.gallery-item{
+  flex:0 0 78%;
+  scroll-snap-align:center;
+  position:relative;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  background:#0a0a0a;
+  border:1px solid rgba(201,165,90,0.15);
+}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 0.5s ease;
+}
+.gallery-item:hover img{transform:scale(1.04);}
+.gallery-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+  padding:24px 16px 14px;
+  color:#c9a55a;
+  font-family:'Manrope',sans-serif;
+  font-size:9px;
+  letter-spacing:0.25em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+.gallery-arrow{
+  display:none;
+  position:absolute;top:50%;transform:translateY(-50%);
+  background:rgba(0,0,0,0.65);
+  border:1px solid rgba(201,165,90,0.4);
+  color:#c9a55a;
+  width:42px;height:42px;border-radius:50%;
+  align-items:center;justify-content:center;
+  cursor:pointer;z-index:10;
+  transition:background 0.3s, opacity 0.3s;
+  backdrop-filter:blur(8px);
+}
+.gallery-arrow:hover{background:rgba(201,165,90,0.2);}
+.gallery-arrow.left{left:8px;}
+.gallery-arrow.right{right:8px;}
+.gallery-dots{
+  display:flex;justify-content:center;gap:6px;margin-top:18px;
+}
+.gallery-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:rgba(201,165,90,0.25);
+  transition:background 0.3s, width 0.3s;
+}
+.gallery-dot.active{background:#c9a55a;width:20px;border-radius:3px;}
+
+/* Desktop: setas visíveis e itens 3 por vez */
+@media(min-width:768px){
+  .gallery-arrow{display:flex;}
+  .gallery-item{flex:0 0 31%;}
+  .gallery-scroll{padding:0 60px 8px;}
+}
+@media(min-width:1024px){
+  .gallery-item{flex:0 0 23%;}
+}
+
 /* NOVO: Free offer badge - destaque */
 .free-badge{
   background:linear-gradient(135deg,#c9a55a,#e2c882);
@@ -475,6 +554,64 @@ menuClose.addEventListener('click',closeMenu);
       </span>
     </div>
   </div>
+
+  <!-- GALERIA DE TRABALHOS REAIS (NOVA) -->
+  <section class="py-12 md:py-20 bg-[#060606] relative" id="trabalhos" aria-label="Galeria de trabalhos reais Bella Beauty Tatuapé">
+    <div class="text-center mb-8 md:mb-12 px-6 reveal">
+      <span class="text-[#c9a55a] uppercase text-[9px] md:text-[10px] tracking-[0.35em] block mb-3">Trabalhos Reais</span>
+      <h2 class="text-2xl md:text-4xl font-display font-light text-white">Resultados das Nossas Clientes</h2>
+      <p class="text-zinc-500 text-xs md:text-sm mt-3 max-w-md mx-auto">Sobrancelhas e cílios — fotos reais, sem filtro, no studio do Tatuapé.</p>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto reveal">
+      <!-- Setas (desktop) -->
+      <button class="gallery-arrow left" id="gallery-prev" aria-label="Foto anterior">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="gallery-arrow right" id="gallery-next" aria-label="Próxima foto">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+
+      <div class="gallery-scroll" id="gallery-scroll">
+        <div class="gallery-item">
+          <img src="trabalho-sobrancelhas-design-tatuape.jpg" loading="lazy" alt="Resultado real de design de sobrancelhas no Tatuapé — Bella Beauty Club"/>
+          <div class="gallery-label">Design de Sobrancelhas</div>
+        </div>
+        <div class="gallery-item">
+          <img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" loading="lazy" alt="Design de sobrancelhas com lash lifting — Bella Beauty Club Tatuapé"/>
+          <div class="gallery-label">Sobrancelhas + Lash Lifting</div>
+        </div>
+        <div class="gallery-item">
+          <img src="trabalho-cilios-volume-tatuape.jpg" loading="lazy" alt="Extensão de cílios volume — resultado real Bella Beauty Tatuapé"/>
+          <div class="gallery-label">Volume Brasileiro</div>
+        </div>
+        <div class="gallery-item">
+          <img src="trabalho-cilios-fio-a-fio-tatuape.jpg" loading="lazy" alt="Cílios fio a fio premium no Tatuapé — Bella Beauty Club"/>
+          <div class="gallery-label">Cílios Fio a Fio</div>
+        </div>
+        <div class="gallery-item">
+          <img src="trabalho-cilios-volume-brasileiro-tatuape.jpg" loading="lazy" alt="Volume brasileiro de cílios — resultado real Bella Beauty Tatuapé"/>
+          <div class="gallery-label">Volume Glam</div>
+        </div>
+      </div>
+
+      <!-- Indicadores -->
+      <div class="gallery-dots" id="gallery-dots">
+        <span class="gallery-dot active"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+        <span class="gallery-dot"></span>
+      </div>
+    </div>
+
+    <div class="text-center mt-8 reveal">
+      <a href="https://wa.me/5511952412499?text=Ol%C3%A1!%20Vi%20a%20galeria%20de%20trabalhos%20e%20quero%20uma%20avalia%C3%A7%C3%A3o%20de%20design%20gr%C3%A1tis%20%E2%9C%A8" target="_blank" rel="noopener"
+        class="inline-flex items-center gap-2 text-[#c9a55a] border-b border-[#c9a55a]/30 pb-1 text-[10px] font-label tracking-widest uppercase hover:text-white transition-colors">
+        QUERO RESULTADO ASSIM →
+      </a>
+    </div>
+  </section>
 
   <!-- About -->
   <section class="py-16 md:py-28 px-6 md:px-24 bg-[#050505]" id="about">
@@ -968,6 +1105,42 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
   });
 });
+
+// GALERIA DE TRABALHOS - controles e indicadores
+(function(){
+  const scroll = document.getElementById('gallery-scroll');
+  const prev = document.getElementById('gallery-prev');
+  const next = document.getElementById('gallery-next');
+  const dots = document.querySelectorAll('.gallery-dot');
+  if(!scroll) return;
+
+  const items = scroll.querySelectorAll('.gallery-item');
+  if(!items.length) return;
+
+  function getStep(){
+    return items[0].offsetWidth + 12; // largura + gap
+  }
+  prev && prev.addEventListener('click', () => scroll.scrollBy({left: -getStep(), behavior:'smooth'}));
+  next && next.addEventListener('click', () => scroll.scrollBy({left: getStep(), behavior:'smooth'}));
+
+  // Atualiza bolinha ativa conforme rola
+  let scrollTimer;
+  scroll.addEventListener('scroll', () => {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => {
+      const step = getStep();
+      const idx = Math.round(scroll.scrollLeft / step);
+      dots.forEach((d, i) => d.classList.toggle('active', i === Math.min(idx, dots.length-1)));
+    }, 80);
+  });
+
+  // Click nas bolinhas pula pra foto
+  dots.forEach((d, i) => {
+    d.addEventListener('click', () => {
+      scroll.scrollTo({left: i * getStep(), behavior:'smooth'});
+    });
+  });
+})();
 </script>
 </body>
 </html>
