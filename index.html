@@ -190,27 +190,55 @@
 <link rel="preload" as="image" href="trabalho-sobrancelhas-design-tatuape.jpg" fetchpriority="high"/>
 
 <!-- Tailwind CDN com defer (não bloqueia renderização inicial) -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
-<script id="tailwind-config">
-tailwind.config = {
+<!-- Pre-config do Tailwind (executa ANTES do CDN) -->
+<script>
+window.tailwindConfig = {
   darkMode: "class",
   theme: {
     extend: {
       colors: {
         "primary":"#775a16","primary-container":"#c9a55a",
-        "on-primary":"#ffffff","background":"#060606",
-        "surface":"#0a0a0a","gold":"#c9a55a",
-        "gold-light":"#e2c882","cream":"#f5f0e8"
+        "on-primary":"#FFFFFF","on-primary-container":"#FFFFFF",
+        "secondary":"#9F9F9F","secondary-container":"#1A1A1A",
+        "on-secondary":"#FFFFFF","on-secondary-container":"#FFFFFF",
+        "tertiary":"#5F5F5F","tertiary-container":"#222222",
+        "on-tertiary":"#FFFFFF","on-tertiary-container":"#FFFFFF",
+        "error":"#B3261E","error-container":"#F9DEDC",
+        "on-error":"#FFFFFF","on-error-container":"#410E0B",
+        "background":"#060606","on-background":"#FFFFFF",
+        "surface":"#0D0D0D","on-surface":"#FFFFFF",
+        "outline":"#888888","outline-variant":"#222222",
       },
       fontFamily: {
+        "display":["Cormorant Garamond","serif"],
         "headline":["Noto Serif","serif"],
         "body":["Manrope","sans-serif"],
-        "display":["Cormorant Garamond","serif"],
-        "label":["Manrope","sans-serif"]
-      }
+        "label":["Manrope","sans-serif"],
+      },
+      borderRadius: {"DEFAULT":"4px","lg":"8px","xl":"12px","full":"9999px"},
+    },
+  },
+};
+</script>
+
+<!-- Tailwind CDN com callback que aplica config e libera renderização -->
+<script>
+(function(){
+  var s = document.createElement('script');
+  s.src = 'https://cdn.tailwindcss.com?plugins=forms,container-queries';
+  s.onload = function(){
+    if(window.tailwind && window.tailwindConfig){
+      window.tailwind.config = window.tailwindConfig;
     }
-  }
-}
+    // Libera renderização do body
+    requestAnimationFrame(function(){
+      document.documentElement.classList.add('tw-ready');
+    });
+  };
+  document.head.appendChild(s);
+})();
+// Fallback: se algo travar, libera após 1.5s
+setTimeout(function(){document.documentElement.classList.add('tw-ready');}, 1500);
 </script>
 
 <style>
@@ -282,9 +310,30 @@ img{max-width:100%;height:auto;}
 #mobile-nav{transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);}
 .nav-link-touch{min-height:56px;display:flex;align-items:center;}
 
-/* Reveal animation */
-.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.75s ease,transform 0.75s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
+/* Reveal animation - sem translateY pra evitar CLS */
+.reveal{opacity:0;transition:opacity 0.5s ease;}
+.reveal.visible{opacity:1;}
+
+/* Anti-FOUC: esconde body até Tailwind carregar */
+html:not(.tw-ready) body{opacity:0;}
+html.tw-ready body{opacity:1;transition:opacity 0.2s ease-in;}
+html{background:#060606;}
+
+/* Reservar espaço pra iframe do mapa */
+footer iframe{display:block;width:100%;height:280px;background:#ece8e0;}
+
+/* Reservar espaço pra galeria */
+.gallery-scroll{min-height:380px;}
+@media(min-width:768px){.gallery-scroll{min-height:420px;}}
+
+/* Botão dopamina sem transform no idle (evita shift) */
+.btn-dopamina{will-change:box-shadow;}
+
+/* Trust bar com altura mínima */
+.trust-bar{min-height:48px;}
+
+/* Stats com altura reservada */
+.stat-number{min-height:56px;display:inline-block;}
 
 /* Stats */
 .stat-number{font-family:'Cormorant Garamond',serif;font-size:3.5rem;color:var(--gold);line-height:1;font-weight:300;}
@@ -510,6 +559,12 @@ img{max-width:100%;height:auto;}
   0%,100%{box-shadow:0 0 8px rgba(201,165,90,0.4);}
   50%{box-shadow:0 0 18px rgba(201,165,90,0.7);}
 }
+
+/* Anti-FOUC: esconde conteúdo até Tailwind aplicar */
+html:not(.tw-ready) body{opacity:0;}
+html.tw-ready body{opacity:1;transition:opacity 0.25s ease-in;}
+/* Fundo preto enquanto carrega (evita flash branco) */
+html{background:#060606;}
 </style>
 </head>
 <body>
@@ -1250,6 +1305,12 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');} });
 },{threshold:0.12});
 revealEls.forEach(el => observer.observe(el));
+
+// Anti-FOUC: libera body quando Tailwind carregar
+function activateTw(){document.documentElement.classList.add('tw-ready');}
+if(window.tailwind){activateTw();}
+else{window.addEventListener('load',activateTw);}
+setTimeout(activateTw,1500); // fallback de segurança
 
 function toggleFaq(btn) {
   const item = btn.closest('.faq-item');
