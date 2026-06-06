@@ -45,6 +45,11 @@
   "description": "Studio premium de sobrancelhas no Tatuapé — Edifício Platina, o mais alto de São Paulo. Design de sobrancelhas, extensão de cílios, lash lifting, tratamento de estrias e estética a domicílio nos Jardins, Itaim Bibi, Vila Nova Conceição, Moema e Alphaville. Atendimento às segundas-feiras disponível.",
   "url": "https://sobrancelhasemsaopaulo.com.br",
   "telephone": "+55-11-95241-2499",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": ["h1", "h2", ".article-lead"]
+  },
+  "knowsAbout": ["design de sobrancelhas", "brushed brow", "brow lamination", "henna para sobrancelhas", "extensão de cílios", "lash lifting", "nano fio a fio", "micropigmentação de sobrancelhas"],
   "priceRange": "$$$$",
   "image": "https://sobrancelhasemsaopaulo.com.br/foto-fundadora.jpg",
   "photo": [
@@ -59,7 +64,7 @@
     "streetAddress": "R. Bom Sucesso, 220 - Sala 1703",
     "addressLocality": "Tatuapé",
     "addressRegion": "SP",
-    "postalCode": "03310-000",
+    "postalCode": "03305-000",
     "addressCountry": "BR"
   },
   "areaServed": ["Tatuapé","Jardins","Itaim Bibi","Vila Nova Conceição","Moema","Vila Mariana","Perdizes","Alphaville","São Paulo"],
@@ -67,10 +72,15 @@
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"21:00"}
   ],
   "hasMap": "https://maps.app.goo.gl/HB8VDCJ21fQyHMYeA",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.542393,
+    "longitude": -46.577058
+  },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "31",
+    "reviewCount": "47",
     "bestRating": "5",
     "worstRating": "1"
   },
@@ -156,6 +166,21 @@
       "@type": "Question",
       "name": "Vocês ficam no Tatuapé — vale a pena ir de outro bairro?",
       "acceptedAnswer": {"@type":"Answer","text":"A maioria das nossas clientes vem de Anália Franco, Vila Formosa, Mooca, Vila Carrão e até dos Jardins. O studio fica no Edifício Platina com manobrista, Shopping Tatuapé ao lado e café no prédio. A 5 minutos do Metrô Tatuapé."}
+    },
+    {
+      "@type": "Question",
+      "name": "O que é brushed brow (sobrancelha escovadinha)?",
+      "acceptedAnswer": {"@type":"Answer","text":"Brushed brow, ou sobrancelha escovadinha, é a tendência de 2026 em que os fios são penteados para cima, criando um efeito natural e despojado, sem linhas duras ou preenchimento pesado. O resultado valoriza a textura real dos fios e dá um aspecto leve e elegante. No Bella Beauty Club, no Tatuapé, o efeito é obtido com design personalizado e, quando necessário, brow lamination para fixar os fios."}
+    },
+    {
+      "@type": "Question",
+      "name": "Qual a diferença entre design de sobrancelha, henna e brow lamination?",
+      "acceptedAnswer": {"@type":"Answer","text":"O design de sobrancelha modela o formato removendo o excesso de fios. A henna adiciona cor e preenche falhas, durando de 7 a 15 dias. O brow lamination alinha e fixa os fios para cima, deixando a sobrancelha cheia e com efeito escovado por 6 a 8 semanas. Na avaliação grátis, indicamos a técnica ideal para o seu rosto e estilo."}
+    },
+    {
+      "@type": "Question",
+      "name": "Onde fazer design de sobrancelhas no Tatuapé, São Paulo?",
+      "acceptedAnswer": {"@type":"Answer","text":"O Bella Beauty Club é um studio especializado em design de sobrancelhas e extensão de cílios no Tatuapé, São Paulo, localizado no Edifício Platina (Rua Bom Sucesso, 220), a 5 minutos do Metrô Tatuapé. Tem nota 5,0 no Google, manobrista e café premium no prédio. A avaliação de design é gratuita pelo WhatsApp (11) 95241-2499."}
     }
   ]
 }
@@ -179,8 +204,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@1&family=Manrope:wght@400;600;700&display=swap"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
-<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"/></noscript>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Noto+Serif:ital@1&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet"/>
 
 <!-- Preload imagem hero crítica -->
 <link rel="preload" as="image" href="trabalho-sobrancelhas-design-tatuape.jpg" fetchpriority="high"/>
@@ -1291,7 +1315,7 @@ menuClose.addEventListener('click',closeMenu);
   <!-- Endereço completo SEO -->
   <div class="text-center">
     <p class="text-[#775a16] font-label text-[9px] md:text-[10px] tracking-[0.2em] uppercase font-bold mb-1">Studio Tatuapé</p>
-    <p class="text-zinc-600 font-label text-[9px] md:text-[10px] tracking-[0.15em] text-center">R. Bom Sucesso, 220 — Sala 1703 · Edifício Platina · Tatuapé · São Paulo - SP · CEP 03310-000</p>
+    <p class="text-zinc-600 font-label text-[9px] md:text-[10px] tracking-[0.15em] text-center">R. Bom Sucesso, 220 — Sala 1703 · Edifício Platina · Tatuapé · São Paulo - SP · CEP 03305-000</p>
     <p class="text-zinc-500 font-label text-[8px] tracking-[0.15em] text-center mt-1">Dom a Dom: 09h às 21h · <span class="text-[#775a16]">⭐ 5,0 no Google · Avaliações Reais</span></p>
   </div>
 
