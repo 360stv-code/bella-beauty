@@ -88,7 +88,7 @@
     .hero h1 em { font-style:italic; color:var(--dourado); }
     .hero p { font-size:17px; color:var(--cinza); margin-bottom:30px; max-width:500px; }
     @media(max-width:860px){ .hero p{ margin-left:auto; margin-right:auto; } }
-    .hero-foto img { width:100%; border-radius:6px; box-shadow:0 30px 60px rgba(42,36,32,0.15); display:block; }
+    .hero-foto img { width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:6px; box-shadow:0 30px 60px rgba(42,36,32,0.15); display:block; }
     .btn-zap { display:inline-flex; align-items:center; gap:10px; background:var(--verde-zap); color:#fff; font-weight:600; font-size:15px; padding:16px 38px; border-radius:50px; transition:transform .25s, box-shadow .25s; letter-spacing:0.5px; }
     .btn-zap:hover { transform:scale(1.04); box-shadow:0 12px 30px rgba(37,211,102,0.3); }
     .zap-svg { width:20px; height:20px; fill:currentColor; }
@@ -124,7 +124,7 @@
 
     .split { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; padding:20px 0; }
     @media(max-width:820px){ .split{ grid-template-columns:1fr; gap:32px; } }
-    .split img { width:100%; border-radius:6px; box-shadow:0 24px 50px rgba(42,36,32,0.12); }
+    .split img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:6px; box-shadow:0 24px 50px rgba(42,36,32,0.12); }
     .split h2 { font-size:clamp(28px,4vw,40px); margin-bottom:16px; }
     .split h2 em { font-style:italic; color:var(--dourado); }
     .split p { color:var(--cinza); margin-bottom:14px; font-size:15.5px; }
@@ -220,6 +220,23 @@
                     <tr><td>Híbrido</td><td>Entre o natural e o volumoso</td></tr>
                     <tr><td>Volume Russo</td><td>Denso e dramático</td></tr>
                 </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="split">
+                <div>
+                    <h2>O efeito <em>Jade Picon</em></h2>
+                    <p>Sabe aquele olhar natural e molhado que virou febre? É o efeito wispy, também chamado de efeito Jade Picon: cílios com aspecto de rímel recém-passado, leves e despojados.</p>
+                    <p>É a escolha perfeita para quem quer realçar o olhar sem exageros — bonito, natural e discreto ao mesmo tempo. E o segredo de um resultado impecável está no mapeamento certo para o seu formato de olho.</p>
+                    <a class="btn-zap" href="https://wa.me/5511952412499?text=Olá!%20Quero%20o%20efeito%20Jade%20Picon%20nos%20cílios" target="_blank" rel="noopener" style="margin-top:8px;">
+                        <svg class="zap-svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.042z"/></svg>
+                        Quero esse efeito
+                    </a>
+                </div>
+                <img src="jade-picon-cilios-efeito-natural-tatuape.jpg" alt="Efeito Jade Picon nos cílios, natural e molhado, no Tatuapé — Bella Beauty" width="500" height="625" loading="lazy">
             </div>
         </div>
     </section>
