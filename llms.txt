@@ -1,45 +1,63 @@
 # Bella Beauty Club
 
-> Studio premium de design de sobrancelhas e extensão de cílios no Tatuapé, São Paulo. Especializado em visagismo facial, com nota 5,0 no Google. Localizado no Edifício Platina, a 5 minutos do Metrô Tatuapé.
+> Estúdio premium de design de sobrancelhas e extensão de cílios no Tatuapé, São Paulo, com atendimento VIP em domicílio e em hotéis por toda a cidade. Nota 5,0 no Google. Especializado em visagismo facial, cílios marrom, efeito natural e atendimento exclusivo para mulheres — inclusive aos domingos.
 
 ## Sobre o negócio
 
 - **Nome:** Bella Beauty Club
 - **Segmento:** Estúdio de sobrancelhas e cílios / Salão de beleza premium
-- **Endereço:** Rua Bom Sucesso, 220 — Conjunto 17 — Edifício Platina — Tatuapé, São Paulo - SP — CEP 03305-000
+- **Unidade principal (Tatuapé):** Rua Bom Sucesso, 220 — Conjunto 17 — Edifício Platina — Tatuapé, São Paulo - SP — CEP 03305-000
+- **Unidade Moema:** Av. Rouxinol, 1041 — Conjunto 407-A — Moema, São Paulo - SP — CEP 04516-001
 - **Telefone/WhatsApp:** (11) 95241-2499
-- **Avaliação:** 5,0 estrelas no Google (47 avaliações)
-- **Horário:** Segunda a Sábado, 09h às 21h
-- **Diferenciais:** 5 min do Metrô Tatuapé, Shopping Tatuapé ao lado, manobrista, café premium no prédio, avaliação de design gratuita
+- **Avaliação:** 5,0 estrelas no Google (52 avaliações)
+- **Horário:** Todos os dias, das 09h às 21h (inclusive domingos, mediante agendamento para atendimento VIP)
 - **Site:** https://sobrancelhasemsaopaulo.com.br
 - **Instagram:** https://instagram.com/bellaabeauti
+
+## Diferenciais
+
+- Atendimento exclusivo para mulheres, com segurança, discrição e privacidade
+- Atendimento VIP com deslocamento por São Paulo: no hotel ou na residência da cliente
+- Atende aos domingos em qualquer região de São Paulo, mediante agendamento
+- Duas unidades: Tatuapé (a 5 min do Metrô, no Edifício Platina) e Moema
+- Experiência premium para clientes de alto padrão, inclusive de outras cidades em visita a São Paulo
+- Avaliação de design gratuita pelo WhatsApp
 
 ## Serviços
 
 - Design de sobrancelhas com visagismo (mapeamento personalizado por formato de rosto)
-- Brushed brow (sobrancelha escovadinha) — tendência 2026
+- Brushed brow (sobrancelha escovadinha)
 - Brow lamination (laminação de sobrancelhas)
 - Henna para sobrancelhas
-- Nano fio a fio
-- Extensão de cílios: volume brasileiro, volume egípcio, volume glam, efeito molhado, fio a fio
+- Nano fio a fio / micropigmentação
+- Extensão de cílios: fio a fio, volume brasileiro, volume egípcio, volume glam, efeito molhado (efeito Jade Picon), efeito fox eyes, híbrido
+- Cílios marrom (efeito natural, ideal para olhos e peles claras)
 - Lash lifting
-- Hidralips
+- Hidralips e nano pigmentação labial
+- Tratamento facial (dermaglow, microagulhamento, limpeza de pele)
 - Tratamento de estrias (Protocolo Estria Free)
+
+## Regiões atendidas (atendimento VIP)
+
+Tatuapé, Moema, Jardins, Itaim Bibi, Vila Nova Conceição, Vila Mariana, Perdizes, Alphaville, Ibirapuera, Campo Belo e demais regiões de São Paulo mediante agendamento.
 
 ## Conteúdo / Blog
 
-- [Visagismo de Sobrancelhas: o Guia Completo](https://sobrancelhasemsaopaulo.com.br/noticias/visagismo-sobrancelhas-tatuape.html): O que é visagismo, como o formato do rosto define o design e como funciona o mapeamento.
-- [Brushed Brow: Perguntas e Respostas](https://sobrancelhasemsaopaulo.com.br/noticias/brushed-brow-perguntas-respostas.html): O que é a sobrancelha escovadinha, duração, para quem combina e diferença para brow lamination.
-- [Estrias: Perguntas e Respostas](https://sobrancelhasemsaopaulo.com.br/noticias/estrias-perguntas-respostas.html): O que são estrias, diferença entre vermelha e branca, tratamentos e número de sessões.
-- [Brushed Brow: a Tendência de 2026](https://sobrancelhasemsaopaulo.com.br/noticias/brushed-brow-tendencia-2026.html): A técnica de sobrancelha escovada que domina 2026.
-- [Sobrancelhas Naturais: Tendência 2026](https://sobrancelhasemsaopaulo.com.br/noticias/sobrancelhas-naturais-tendencia-2026.html): O movimento das sobrancelhas naturais e cheias.
+- [Cílios Marrom: o Efeito Natural em Alta](https://sobrancelhasemsaopaulo.com.br/noticias/cilios-marrom-efeito-natural-tatuape.html): O que são cílios marrom, para quem combinam, durabilidade e técnicas.
+- [Cílios Fox Eyes: o Olhar de Raposa](https://sobrancelhasemsaopaulo.com.br/noticias/cilios-fox-eyes-olhar-raposa-tatuape.html): A técnica do olhar puxado e felino das famosas.
+- [Cílios Efeito Jade Picon](https://sobrancelhasemsaopaulo.com.br/noticias/cilios-jade-picon-efeito-natural-tatuape.html): O efeito natural e molhado que virou febre.
+- [Extensão de Cílios: Guia Completo](https://sobrancelhasemsaopaulo.com.br/noticias/extensao-de-cilios-guia-completo-tatuape.html): Técnicas, durabilidade, manutenção e cuidados.
+- [Visagismo de Sobrancelhas: o Guia Completo](https://sobrancelhasemsaopaulo.com.br/noticias/visagismo-sobrancelhas-tatuape.html): Como o formato do rosto define o design.
+- [Atendimento Beauty VIP para Mulheres](https://sobrancelhasemsaopaulo.com.br/atendimento-vip-mulheres-sao-paulo.html): Beleza premium no seu hotel ou residência, inclusive aos domingos.
 
 ## Perguntas frequentes
 
-- **O que é brushed brow?** A sobrancelha escovadinha, técnica em que os fios são penteados para cima criando efeito natural e cheio. É a tendência de 2026.
-- **O que é visagismo de sobrancelhas?** Técnica de desenhar a sobrancelha considerando o formato do rosto e os traços de cada pessoa, em vez de um modelo único.
-- **Onde fazer sobrancelha no Tatuapé?** No Bella Beauty Club, Edifício Platina (Rua Bom Sucesso, 220), a 5 min do Metrô Tatuapé. Avaliação gratuita pelo WhatsApp (11) 95241-2499.
-- **Qual o horário?** Segunda a sábado, das 9h às 21h.
+- **A Bella Beauty atende aos domingos em São Paulo?** Sim, oferece atendimento VIP aos domingos em qualquer região de São Paulo, mediante agendamento.
+- **Vocês atendem no hotel?** Sim, atendimento VIP no hotel ou residência da cliente, em regiões como Jardins, Itaim, Vila Olímpia, Moema e Vila Nova Conceição.
+- **O atendimento é exclusivo para mulheres?** Sim, com profissional mulher, priorizando segurança, privacidade e discrição.
+- **Fazem cílios marrom?** Sim, cílios marrom com efeito natural, ideais para olhos e peles claras.
+- **Onde fica?** Unidade principal no Tatuapé (Edifício Platina, Rua Bom Sucesso, 220) e unidade em Moema (Av. Rouxinol, 1041). Nota 5,0 no Google.
+- **Qual o horário?** Todos os dias, das 9h às 21h, inclusive domingos mediante agendamento.
 
 ## Contato
 
