@@ -361,8 +361,8 @@ ul.learn li{padding:13px 0 13px 32px;border-bottom:1px solid rgba(201,165,90,.12
 ul.learn li:before{content:"✓";color:var(--gd);position:absolute;left:0;font-weight:700;font-size:1.1rem}
 .galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0}
 @media(max-width:640px){.galeria{grid-template-columns:repeat(3,1fr);gap:8px}}
-.galeria figure{margin:0;position:relative;border-radius:14px;overflow:hidden;border:1px solid rgba(201,165,90,.25)}
-.galeria img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 35%;display:block;transition:transform .5s}
+.galeria figure{margin:0;position:relative;border-radius:14px;overflow:hidden;border:1px solid rgba(201,165,90,.25);aspect-ratio:3/4}
+.galeria img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform .5s}
 .galeria figure:hover img{transform:scale(1.06)}
 .galeria figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.85),transparent);padding:20px 12px 10px;font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gd);font-weight:600}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
