@@ -56,7 +56,7 @@
    "@id": "https://sobrancelhasemsaopaulo.com.br/sobrancelhas-premium-aeroporto-sao-paulo.html#service",
    "serviceType": "Design de sobrancelhas e cílios premium",
    "name": "Sobrancelhas premium para quem vem de fora de São Paulo",
-   "description": "Design de sobrancelhas, brow lamination, lash lifting e extensão de cílios para visitantes e viajantes de passagem por São Paulo, com unidades no Tatuapé e em Moema, atendimento todos os dias das 9h às 21h e Atendimento VIP em hotel exclusivo para mulheres.",
+   "description": "Design de sobrancelhas, brow lamination, lash lifting e extensão de cílios com efeito natural (fio a fio, efeito molhado, cílios marrom) para visitantes e viajantes de passagem por São Paulo, com unidades no Tatuapé e em Moema, atendimento todos os dias das 9h às 21h e Atendimento VIP em hotel exclusivo para mulheres.",
    "provider": [
     {
      "@type": "BeautySalon",
@@ -270,6 +270,14 @@
     },
     {
      "@type": "Question",
+     "name": "Vocês fazem cílios com efeito natural?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim. Para um resultado natural indicamos fio a fio, efeito molhado (estilo Jade Picon), lash lifting, cílios marrom, volume brasileiro leve ou híbrido. Na avaliação gratuita pelo WhatsApp definimos a técnica ideal ao seu olhar."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "Quais serviços posso fazer de uma vez só?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -290,6 +298,14 @@
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "O atendimento é em português pelo WhatsApp. Turistas são bem-vindas: o atendimento é feito com tranquilidade, e a equipe orienta o procedimento e os cuidados após o serviço."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Quem é a profissional que atende no Bella Beauty Club?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A fundadora do Bella Beauty Club trabalhou com a Natalia Beauty, referência em sobrancelhas e olhar no Brasil, onde era master e treinava muitas colaboradoras."
      }
     }
    ]
@@ -375,6 +391,14 @@
     footer a { color:var(--dourado); }
     .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:980px; margin:0 auto; }
     .en-box { max-width:760px; margin:0 auto; border-left:3px solid var(--dourado); padding:6px 0 6px 20px; color:#cfc7bd; font-size:15px; }
+    .fundadora { display:grid; grid-template-columns:260px 1fr; gap:30px; max-width:860px; margin:0 auto; align-items:center; }
+    .fundadora img { width:100%; height:auto; border-radius:12px; border:1px solid rgba(201,165,90,0.3); display:block; }
+    .fundadora h2 { font-size:clamp(24px,3.4vw,34px); margin-bottom:14px; text-align:left; }
+    .fundadora h2 .gold { color:var(--dourado); font-style:italic; }
+    .fundadora p { color:#cfc7bd; font-size:15.5px; margin-bottom:12px; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+    .tags span { font-size:11px; letter-spacing:1px; text-transform:uppercase; border:1px solid rgba(201,165,90,0.4); color:var(--dourado-claro); padding:6px 12px; border-radius:50px; }
+    @media(max-width:640px){ .fundadora{grid-template-columns:1fr;} .fundadora img{max-width:260px;margin:0 auto;} }
     @media(max-width:768px){ .grid3{grid-template-columns:1fr;} }
 </style>
 </head>
@@ -425,12 +449,42 @@
             <div class="grid2">
                 <div class="card"><h3>Design de sobrancelhas</h3><p>Visagismo para harmonizar com o seu rosto, com avaliação gratuita pelo WhatsApp.</p></div>
                 <div class="card"><h3>Brow lamination</h3><p>Fios alinhados e penteados para cima: sobrancelha cheia e natural.</p></div>
-                <div class="card"><h3>Lash lifting e cílios marrom</h3><p>Olhar aberto e natural, sem precisar de rímel no dia a dia da viagem.</p></div>
+                <div class="card"><h3>Lash lifting e cílios marrom</h3><p>Olhar aberto e natural, sem precisar de rímel no dia a dia da viagem. Veja o efeito natural logo abaixo.</p></div>
                 <div class="card"><h3>Extensão de cílios</h3><p>Fio a fio, volume brasileiro, egípcio, americano, glam, efeito molhado e híbrido.</p></div>
             </div>
             <div class="antesdepois" style="margin-top:34px;">
                 <div class="ad-item"><picture><source srcset="trabalho-sobrancelhas-design-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-design-tatuape.jpg" alt="Design de sobrancelhas premium — resultado real no Bella Beauty Club" loading="eager" width="600" height="800"></picture></div>
                 <div class="ad-item"><picture><source srcset="trabalho-sobrancelhas-lash-lifting-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" alt="Lash lifting e sobrancelha — resultado real no Bella Beauty Club" loading="lazy" width="600" height="800"></picture></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="txt-center" style="margin-bottom:30px;"><h2>Cílios com <span class="gold">efeito natural</span> para o seu dia a dia de viagem</h2><p>Olhar marcante sem exagero: técnicas leves, que combinam com quem passa o dia em reuniões, passeios e eventos.</p></div>
+            <div class="grid3">
+                <div class="card"><h3>Fio a fio</h3><p>Um fio sobre cada cílio natural: o efeito mais clássico, discreto e elegante.</p></div>
+                <div class="card"><h3>Efeito molhado (Jade Picon)</h3><p>Aspecto de rímel recém-passado, leve e despojado, sem pesar no olhar.</p></div>
+                <div class="card"><h3>Lash lifting</h3><p>Curvatura e alongamento dos seus próprios cílios, sem extensão e sem precisar de rímel.</p></div>
+                <div class="card"><h3>Cílios marrom</h3><p>Tom mais suave e natural, ideal para quem quer sofisticação discreta.</p></div>
+                <div class="card"><h3>Volume brasileiro</h3><p>Mais preenchimento, ainda com acabamento natural e delicado.</p></div>
+                <div class="card"><h3>Híbrido</h3><p>Mistura de fio a fio com volume, para um olhar equilibrado.</p></div>
+            </div>
+            <p style="text-align:center;margin-top:20px;font-size:14px;"><a style="color:var(--dourado)" href="cilios-tatuape.html">Ver todos os serviços de cílios →</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="fundadora">
+                <picture><source srcset="foto-fundadora.webp" type="image/webp"><img src="foto-fundadora.jpg" alt="Fundadora do Bella Beauty Club, especialista em sobrancelhas e cílios com experiência como master na Natalia Beauty" loading="lazy" width="800" height="1200"></picture>
+                <div>
+                    <span class="eyebrow">Quem cuida de você</span>
+                    <h2>Experiência de <span class="gold">quem treinou</span> equipes</h2>
+                    <p>A fundadora do Bella Beauty Club trabalhou com a <strong style="color:var(--creme)">Natalia Beauty</strong>, referência em sobrancelhas e olhar no Brasil, onde era <strong style="color:var(--creme)">master</strong> e treinava muitas colaboradoras.</p>
+                    <p>Essa bagagem se traduz em avaliação criteriosa do seu rosto, técnica refinada e resultado natural, mesmo para quem está de passagem e tem pouco tempo.</p>
+                    <div class="tags"><span>Trabalhou com a Natalia Beauty</span><span>Master e treinadora</span><span>Nota 5,0 no Google</span></div>
+                </div>
             </div>
         </div>
     </section>
@@ -465,8 +519,10 @@
                 <div class="faq-item"><h3>Posso fazer sobrancelha no mesmo dia em que chego em São Paulo?</h3><p>Sim, mediante agendamento. Atendemos todos os dias, das 9h às 21h, inclusive domingos. Chame no WhatsApp com a data, o horário de chegada e o hotel para encontrarmos o melhor horário.</p></div>
                 <div class="faq-item"><h3>Quanto tempo leva o design de sobrancelhas?</h3><p>Depende da técnica escolhida. Na avaliação, que é gratuita pelo WhatsApp, indicamos o procedimento ideal e o tempo estimado para você encaixar na sua agenda de viagem.</p></div>
                 <div class="faq-item"><h3>Vocês atendem no hotel?</h3><p>Sim. Temos o Atendimento VIP exclusivo para mulheres, em domicílio ou no hotel, inclusive aos domingos, com segurança e discrição. Consulte disponibilidade e região pelo WhatsApp.</p></div>
+                <div class="faq-item"><h3>Vocês fazem cílios com efeito natural?</h3><p>Sim. Para um resultado natural indicamos fio a fio, efeito molhado (estilo Jade Picon), lash lifting, cílios marrom, volume brasileiro leve ou híbrido. Na avaliação gratuita pelo WhatsApp definimos a técnica ideal ao seu olhar.</p></div>
                 <div class="faq-item"><h3>Quais serviços posso fazer de uma vez só?</h3><p>Design de sobrancelhas, brow lamination, lash lifting, extensão de cílios (fio a fio, volume brasileiro, egípcio, americano, glam, efeito molhado e híbrido) e cílios marrom. O combo de sobrancelhas e cílios é muito procurado por quem está de passagem.</p></div>
                 <div class="faq-item"><h3>Como chego ao Bella Beauty Club no Tatuapé?</h3><p>Rua Bom Sucesso, 220, Conj. 17, Edifício Platina, a 5 minutos do Metrô Tatuapé (Linha 3-Vermelha). De aplicativo, informe o endereço ou o Edifício Platina.</p></div>
+                <div class="faq-item"><h3>Quem é a profissional que atende no Bella Beauty Club?</h3><p>A fundadora do Bella Beauty Club trabalhou com a Natalia Beauty, referência em sobrancelhas e olhar no Brasil, onde era master e treinava muitas colaboradoras.</p></div>
                 <div class="faq-item"><h3>Atendem em inglês ou para turistas estrangeiras?</h3><p>O atendimento é em português pelo WhatsApp. Turistas são bem-vindas: o atendimento é feito com tranquilidade, e a equipe orienta o procedimento e os cuidados após o serviço.</p></div>
             </div>
         </div>
