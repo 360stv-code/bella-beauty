@@ -225,8 +225,8 @@
     .hero h1 { font-size:clamp(32px,5vw,52px); margin-bottom:18px; }
     .hero h1 .gold { color:var(--dourado); font-style:italic; }
     .hero p { font-size:clamp(15px,2vw,18px); color:var(--cinza); max-width:640px; margin:0 auto 28px; }
-    .btn-zap { display:inline-flex; align-items:center; gap:10px; background:var(--verde-zap); color:#fff; font-weight:600; font-size:16px; padding:16px 38px; border-radius:50px; transition:transform .25s, box-shadow .25s; }
-    .btn-zap:hover { transform:scale(1.04); box-shadow:0 12px 30px rgba(37,211,102,0.35); }
+    .btn-zap { display:inline-flex; align-items:center; gap:10px; background:#15803d; color:#fff; font-weight:600; font-size:16px; padding:16px 38px; border-radius:50px; transition:transform .25s, box-shadow .25s; }
+    .btn-zap:hover { transform:scale(1.04); box-shadow:0 12px 30px rgba(21,128,61,0.4); }
     .zap-svg { width:21px; height:21px; fill:currentColor; }
 
     .antesdepois { display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:760px; margin:40px auto; }
@@ -272,6 +272,8 @@
     .btns { display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
     .crumb { font-size:12px; color:var(--cinza); padding:14px 0 0; text-align:center; } .crumb a { color:var(--dourado); }
     @media(max-width:640px){ .grid2{grid-template-columns:1fr;} .antesdepois{gap:10px;} }
+    @media(max-width:640px){ .hero h1 { min-height:3.6em; } }
+    .crumb a, footer a, .txt-center p a { text-decoration:underline; text-underline-offset:3px; }
     footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(201,165,90,0.12); font-size:13px; color:var(--cinza); }
     footer a { color:var(--dourado); }
     .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:980px; margin:0 auto; }
@@ -306,6 +308,7 @@
             </div>
         </div>
     </nav>
+    <main>
 
     <header class="hero">
         <div class="wrap">
@@ -326,7 +329,7 @@
     <section class="section">
         <div class="wrap">
             <div class="txt-center" style="margin-bottom:26px;"><h2>Resultados <span class="gold">reais</span></h2></div>
-            <div class="gal"><figure><picture><source srcset="trabalho-cilios-fio-a-fio-tatuape.webp" type="image/webp"><img src="trabalho-cilios-fio-a-fio-tatuape.jpg" alt="Extensão de cílios fio a fio — resultado real no Bella Beauty Club, Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="trabalho-sobrancelhas-lash-lifting-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" alt="Lash lifting e sobrancelha — resultado real no Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><img src="galeria-cilios-tatuape-1.jpg" alt="Cílios com efeito natural — Bella Beauty Club Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><img src="galeria-cilios-tatuape-2.jpg" alt="Extensão de cílios fio a fio — resultado real" loading="lazy" width="600" height="750"></picture></figure><figure><picture><img src="galeria-cilios-tatuape-4.jpg" alt="Olhar natural com extensão de cílios — Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="trabalho-cilios-volume-brasileiro-tatuape.webp" type="image/webp"><img src="trabalho-cilios-volume-brasileiro-tatuape.jpg" alt="Volume brasileiro — resultado real no Bella Beauty Club" loading="lazy" width="600" height="750"></picture></figure></div>
+            <div class="gal"><figure><picture><source srcset="trabalho-cilios-fio-a-fio-tatuape.webp" type="image/webp"><img src="trabalho-cilios-fio-a-fio-tatuape.jpg" alt="Extensão de cílios fio a fio — resultado real no Bella Beauty Club, Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="trabalho-sobrancelhas-lash-lifting-tatuape-m.webp" type="image/webp"><img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" alt="Lash lifting e sobrancelha — resultado real no Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="galeria-cilios-tatuape-1-m.webp" type="image/webp"><img src="galeria-cilios-tatuape-1.jpg" alt="Cílios com efeito natural — Bella Beauty Club Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="galeria-cilios-tatuape-2-m.webp" type="image/webp"><img src="galeria-cilios-tatuape-2.jpg" alt="Extensão de cílios fio a fio — resultado real" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="galeria-cilios-tatuape-4-m.webp" type="image/webp"><img src="galeria-cilios-tatuape-4.jpg" alt="Olhar natural com extensão de cílios — Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="trabalho-cilios-volume-brasileiro-tatuape.webp" type="image/webp"><img src="trabalho-cilios-volume-brasileiro-tatuape.jpg" alt="Volume brasileiro — resultado real no Bella Beauty Club" loading="lazy" width="600" height="750"></picture></figure></div>
             <p style="text-align:center;margin-top:20px;font-size:14px;"><a style="color:var(--dourado)" href="cilios-tatuape.html">Ver cílios →</a> · <a style="color:var(--dourado)" href="valores.html">Ver valores →</a> · <a style="color:var(--dourado)" href="cilios-sobrancelhas-moema.html">Unidade Moema →</a></p>
         </div>
     </section>
@@ -368,6 +371,7 @@
         </div>
     </section>
 
+    </main>
     <footer>
         <p><a href="index.html">Home</a> · <a href="cilios-tatuape.html">Cílios</a> · <a href="cilios-sobrancelhas-moema.html">Moema</a> · <a href="atendimento-vip-mulheres-sao-paulo.html">Atendimento VIP</a> · <a href="valores.html">Valores</a></p>
         <p style="margin-top:8px;">© 2026 Bella Beauty Club · Tatuapé, São Paulo · <a href="https://wa.me/5511952412499">(11) 95241-2499</a></p>
