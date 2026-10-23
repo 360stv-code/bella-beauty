@@ -313,11 +313,9 @@
  ]
 }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <style>@font-face{font-family:'Playfair Display';font-style:normal;font-display:optional;font-weight:400 900;src:url(fonts/playfair-display-latin-wght-normal.woff2) format('woff2-variations'),url(fonts/playfair-display-latin-wght-normal.woff2) format('woff2');}@font-face{font-family:'Montserrat';font-style:normal;font-display:optional;font-weight:100 900;src:url(fonts/montserrat-latin-wght-normal.woff2) format('woff2-variations'),url(fonts/montserrat-latin-wght-normal.woff2) format('woff2');}</style>
 <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     :root { --preto:#0c0a09; --preto2:#161210; --dourado:#c9a55a; --dourado-claro:#e3c989; --creme:#f5efe6; --cinza:#948a7e; --verde-zap:#25D366; }
@@ -389,6 +387,7 @@
     @media(max-width:640px){ .grid2{grid-template-columns:1fr;} .antesdepois{gap:10px;} }
     @media(max-width:640px){ .hero h1 { min-height:3.6em; } }
     .crumb a, footer a, .txt-center p a { text-decoration:underline; text-underline-offset:3px; }
+    main a:not(.btn-zap):not(.btn-out){ text-decoration:underline; text-underline-offset:3px; }
     footer { text-align:center; padding:40px 24px; border-top:1px solid rgba(201,165,90,0.12); font-size:13px; color:var(--cinza); }
     footer a { color:var(--dourado); }
     .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:980px; margin:0 auto; }

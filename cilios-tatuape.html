@@ -56,6 +56,7 @@
     }
     </script>
     
+    <link rel="preload" href="trabalho-cilios-volume-brasileiro-tatuape-m.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
@@ -64,8 +65,8 @@
 <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     :root {
-        --branco:#fefdfb; --creme:#f7f3ee; --nude:#e8ddd2; --dourado:#b8935a; --dourado-esc:#9a7842;
-        --preto:#2a2420; --cinza:#8a7f75; --cinza-claro:#b5aca2; --verde-zap:#25D366; --rosa:#d4a5a0;
+        --branco:#fefdfb; --creme:#f7f3ee; --nude:#e8ddd2; --dourado:#8a6a2e; --dourado-esc:#6f5322;
+        --preto:#2a2420; --cinza:#6b6158; --cinza-claro:#b5aca2; --verde-zap:#15803d; --rosa:#d4a5a0;
     }
     body { font-family:'Jost',sans-serif; background:var(--branco); color:var(--preto); line-height:1.7; overflow-x:hidden; }
     .wrap { max-width:1080px; margin:0 auto; padding:0 26px; }
@@ -148,9 +149,11 @@
 
     .cta-final { text-align:center; padding:70px 0; background:var(--preto); color:var(--branco); }
     .cta-final h2 { font-size:clamp(30px,4.5vw,48px); margin-bottom:16px; color:var(--branco); }
-    .cta-final h2 em { font-style:italic; color:var(--dourado); }
+    .cta-final h2 em { font-style:italic; color:#d9b97a; }
     .cta-final p { color:var(--cinza-claro); margin-bottom:30px; font-size:16px; }
 
+    main a:not(.btn-zap), footer a, .crumb a { text-decoration:underline; text-underline-offset:3px; }
+    .nav-links a, .logo { text-decoration:none !important; }
     footer { text-align:center; padding:40px 26px; border-top:1px solid var(--nude); font-size:13px; color:var(--cinza); }
     footer a { color:var(--dourado-esc); }
 </style>
@@ -169,7 +172,7 @@
             </div>
         </div>
     </nav>
-
+    <main>
     <div class="wrap">
         <section class="hero">
             <div class="hero-txt">
@@ -186,7 +189,7 @@
                 </a>
             </div>
             <div class="hero-foto">
-                <img src="trabalho-cilios-volume-brasileiro-tatuape.jpg" alt="Extensão de cílios volume brasileiro no Tatuapé, perto de você — Bella Beauty" width="500" height="625" loading="eager">
+                <picture><source srcset="trabalho-cilios-volume-brasileiro-tatuape-m.webp" type="image/webp"><img src="trabalho-cilios-volume-brasileiro-tatuape.jpg" fetchpriority="high" alt="Extensão de cílios volume brasileiro no Tatuapé, perto de você — Bella Beauty" width="500" height="625" loading="eager"></picture>
             </div>
         </section>
     </div>
@@ -302,6 +305,7 @@
         </div>
     </section>
 
+    </main>
     <footer>
         <p>© 2026 Bella Beauty Club · Tatuapé, São Paulo · <a href="https://wa.me/5511952412499">(11) 95241-2499</a></p>
         <p style="margin-top:8px;">R. Bom Sucesso, 220 · Edifício Platina · ao lado do Shopping Metrô Tatuapé · <a href="https://instagram.com/bellaabeauti">@bellaabeauti</a></p>
