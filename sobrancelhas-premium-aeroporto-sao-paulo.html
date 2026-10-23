@@ -305,7 +305,7 @@
      "name": "Quem é a profissional que atende no Bella Beauty Club?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "A fundadora do Bella Beauty Club trabalhou com a Natalia Beauty, referência em sobrancelhas e olhar no Brasil, onde era master e treinava muitas colaboradoras."
+      "text": "A fundadora do Bella Beauty Club trabalhou com a Natalia Beauty, referência em sobrancelhas e olhar no Brasil, onde era master e treinava as profissionais da marca."
      }
     }
    ]
@@ -391,6 +391,9 @@
     footer a { color:var(--dourado); }
     .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; max-width:980px; margin:0 auto; }
     .en-box { max-width:760px; margin:0 auto; border-left:3px solid var(--dourado); padding:6px 0 6px 20px; color:#cfc7bd; font-size:15px; }
+    .carrossel { display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding:4px 2px 10px; scrollbar-width:thin; scrollbar-color:var(--dourado) transparent; }
+    .carrossel .slide { flex:0 0 min(72%,260px); aspect-ratio:4/5; margin:0; border-radius:12px; overflow:hidden; scroll-snap-align:center; background:var(--preto2); }
+    .carrossel .slide img { width:100%; height:100%; object-fit:cover; display:block; }
     .fundadora { display:grid; grid-template-columns:260px 1fr; gap:30px; max-width:860px; margin:0 auto; align-items:center; }
     .fundadora img { width:100%; height:auto; border-radius:12px; border:1px solid rgba(201,165,90,0.3); display:block; }
     .fundadora h2 { font-size:clamp(24px,3.4vw,34px); margin-bottom:14px; text-align:left; }
@@ -452,10 +455,8 @@
                 <div class="card"><h3>Lash lifting e cílios marrom</h3><p>Olhar aberto e natural, sem precisar de rímel no dia a dia da viagem. Veja o efeito natural logo abaixo.</p></div>
                 <div class="card"><h3>Extensão de cílios</h3><p>Fio a fio, volume brasileiro, egípcio, americano, glam, efeito molhado e híbrido.</p></div>
             </div>
-            <div class="antesdepois" style="margin-top:34px;">
-                <div class="ad-item"><picture><source srcset="trabalho-sobrancelhas-design-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-design-tatuape.jpg" alt="Design de sobrancelhas premium — resultado real no Bella Beauty Club" loading="eager" width="600" height="800"></picture></div>
-                <div class="ad-item"><picture><source srcset="trabalho-sobrancelhas-lash-lifting-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" alt="Lash lifting e sobrancelha — resultado real no Bella Beauty Club" loading="lazy" width="600" height="800"></picture></div>
-            </div>
+            <div class="carrossel" style="margin-top:34px;" role="region" aria-label="Resultados reais do Bella Beauty Club"><figure class="slide"><picture><source srcset="trabalho-sobrancelhas-design-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-design-tatuape.jpg" alt="Design de sobrancelhas premium — resultado real no Bella Beauty Club" loading="lazy" width="480" height="600"></picture></figure><figure class="slide"><picture><source srcset="trabalho-sobrancelhas-lash-lifting-tatuape.webp" type="image/webp"><img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" alt="Lash lifting e sobrancelha — resultado real" loading="lazy" width="480" height="600"></picture></figure><figure class="slide"><picture><img src="galeria-cilios-tatuape-1.jpg" alt="Cílios com efeito natural — resultado real" loading="lazy" width="480" height="600"></picture></figure><figure class="slide"><picture><img src="galeria-cilios-tatuape-2.jpg" alt="Extensão de cílios fio a fio — resultado real" loading="lazy" width="480" height="600"></picture></figure><figure class="slide"><picture><img src="galeria-cilios-tatuape-4.jpg" alt="Olhar natural com extensão de cílios — resultado real" loading="lazy" width="480" height="600"></picture></figure></div>
+            <p style="text-align:center;font-size:12px;color:var(--cinza);margin-top:10px;letter-spacing:1px;">DESLIZE PARA VER MAIS →</p>
         </div>
     </section>
 
@@ -480,8 +481,8 @@
                 <picture><source srcset="foto-fundadora.webp" type="image/webp"><img src="foto-fundadora.jpg" alt="Fundadora do Bella Beauty Club, especialista em sobrancelhas e cílios com experiência como master na Natalia Beauty" loading="lazy" width="800" height="1200"></picture>
                 <div>
                     <span class="eyebrow">Quem cuida de você</span>
-                    <h2>Experiência de <span class="gold">quem treinou</span> equipes</h2>
-                    <p>A fundadora do Bella Beauty Club trabalhou com a <strong style="color:var(--creme)">Natalia Beauty</strong>, referência em sobrancelhas e olhar no Brasil, onde era <strong style="color:var(--creme)">master</strong> e treinava muitas colaboradoras.</p>
+                    <h2>Experiência de <span class="gold">quem treinou</span> profissionais</h2>
+                    <p>A fundadora do Bella Beauty Club trabalhou com a <strong style="color:var(--creme)">Natalia Beauty</strong>, referência em sobrancelhas e olhar no Brasil, onde era <strong style="color:var(--creme)">master</strong> e treinava as profissionais da marca.</p>
                     <p>Essa bagagem se traduz em avaliação criteriosa do seu rosto, técnica refinada e resultado natural, mesmo para quem está de passagem e tem pouco tempo.</p>
                     <div class="tags"><span>Trabalhou com a Natalia Beauty</span><span>Master e treinadora</span><span>Nota 5,0 no Google</span></div>
                 </div>
@@ -522,7 +523,7 @@
                 <div class="faq-item"><h3>Vocês fazem cílios com efeito natural?</h3><p>Sim. Para um resultado natural indicamos fio a fio, efeito molhado (estilo Jade Picon), lash lifting, cílios marrom, volume brasileiro leve ou híbrido. Na avaliação gratuita pelo WhatsApp definimos a técnica ideal ao seu olhar.</p></div>
                 <div class="faq-item"><h3>Quais serviços posso fazer de uma vez só?</h3><p>Design de sobrancelhas, brow lamination, lash lifting, extensão de cílios (fio a fio, volume brasileiro, egípcio, americano, glam, efeito molhado e híbrido) e cílios marrom. O combo de sobrancelhas e cílios é muito procurado por quem está de passagem.</p></div>
                 <div class="faq-item"><h3>Como chego ao Bella Beauty Club no Tatuapé?</h3><p>Rua Bom Sucesso, 220, Conj. 17, Edifício Platina, a 5 minutos do Metrô Tatuapé (Linha 3-Vermelha). De aplicativo, informe o endereço ou o Edifício Platina.</p></div>
-                <div class="faq-item"><h3>Quem é a profissional que atende no Bella Beauty Club?</h3><p>A fundadora do Bella Beauty Club trabalhou com a Natalia Beauty, referência em sobrancelhas e olhar no Brasil, onde era master e treinava muitas colaboradoras.</p></div>
+                <div class="faq-item"><h3>Quem é a profissional que atende no Bella Beauty Club?</h3><p>A fundadora do Bella Beauty Club trabalhou com a Natalia Beauty, referência em sobrancelhas e olhar no Brasil, onde era master e treinava as profissionais da marca.</p></div>
                 <div class="faq-item"><h3>Atendem em inglês ou para turistas estrangeiras?</h3><p>O atendimento é em português pelo WhatsApp. Turistas são bem-vindas: o atendimento é feito com tranquilidade, e a equipe orienta o procedimento e os cuidados após o serviço.</p></div>
             </div>
         </div>
