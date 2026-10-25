@@ -108,7 +108,7 @@ $('f').onsubmit=async function(e){e.preventDefault();var em=$('em').value.trim()
   if(!r.error)msg('m','Se o e-mail existir, enviamos o link para redefinir a senha.');
  }else{r=await sb.auth.signInWithPassword({email:em,password:pw})}
  $('go').disabled=false;
- if(r&&r.error)msg('m',r.error.message.indexOf('Invalid login')>-1?'E-mail ou senha incorretos.':r.error.message.indexOf('not confirmed')>-1?'Confirme seu e-mail antes de entrar.':'Não foi possível concluir. Tente novamente.',1)};
+ if(r&&r.error)msg('m',r.error.message.indexOf('Invalid login')>-1?'E-mail ou senha incorretos.':r.error.message.indexOf('not confirmed')>-1?'Confirme seu e-mail antes de entrar.':(function(m){m=m||'';if(/rate limit/i.test(m))return'Muitos e-mails enviados. Aguarde alguns minutos e tente de novo.';if(/already registered|already been registered/i.test(m))return'Este e-mail já tem conta. Toque em "Já tenho conta".';if(/weak|pwned|easy to guess/i.test(m))return'Senha fraca. Use uma senha diferente e mais forte.';if(/Database error/i.test(m))return'Erro ao salvar o cadastro (banco). Avise o suporte: '+m;return'Não foi possível concluir: '+m})(r.error.message),1)};
 $('fnp').onsubmit=async function(e){e.preventDefault();var r=await sb.auth.updateUser({password:$('np').value});
  if(r.error)msg('m2','Não foi possível salvar. Use 6 ou mais caracteres.',1);else{msg('m2','Senha alterada!');loadHome()}};
 $('out').onclick=async function(){await sb.auth.signOut();show('auth');setMode('login')};
