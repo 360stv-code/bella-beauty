@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Bella Club · Área da cliente</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0c0a09">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bella Club">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--preto:#0c0a09;--preto2:#161210;--dourado:#c9a55a;--dc:#e3c989;--creme:#f5efe6;--cinza:#a39a8d}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--preto);color:var(--creme);min-height:100vh;line-height:1.6;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+.w{max-width:480px;margin:0 auto;padding:24px 20px 60px}
+h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:700;line-height:1.2}
+.logo{text-align:center;font-family:Georgia,serif;font-size:24px;letter-spacing:2px;margin:10px 0 26px}.logo span{color:var(--dourado)}
+.card{background:var(--preto2);border:1px solid rgba(201,165,90,.25);border-radius:14px;padding:22px;margin-bottom:16px}
+label{display:block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--dc);margin:14px 0 6px}
+input{width:100%;background:#0c0a09;color:var(--creme);border:1px solid rgba(201,165,90,.35);border-radius:8px;padding:14px;font:inherit;font-size:16px}
+input:focus{outline:2px solid var(--dourado)}
+button,.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:0;border-radius:50px;padding:15px;font:inherit;font-weight:600;font-size:16px;cursor:pointer;text-decoration:none;margin-top:18px;background:#15803d;color:#fff}
+.sec{background:transparent;border:1px solid var(--dourado);color:var(--dourado)}
+.lnk{background:none;color:var(--dc);text-decoration:underline;font-size:14px;margin-top:12px;padding:6px;width:auto;display:inline;font-weight:400}
+.c{text-align:center}
+.msg{margin-top:14px;font-size:14px;color:var(--dc);text-align:center;min-height:20px}.msg.err{color:#f19a9a}
+.pts{font-size:46px;font-family:Georgia,serif;color:var(--dourado);line-height:1}
+.mut{color:var(--cinza);font-size:14px}
+.item{border-bottom:1px solid rgba(201,165,90,.15);padding:12px 0}.item:last-child{border:0}
+.item b{display:block}.item span{font-size:13px;color:var(--cinza)}
+.hide{display:none}
+.tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--dc);border:1px solid rgba(201,165,90,.4);border-radius:50px;padding:4px 10px}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="logo">BELLA <span>CLUB</span></div>
+
+<section id="auth">
+  <div class="card">
+    <h1 id="tit" style="font-size:26px">Entrar</h1>
+    <p class="mut" id="sub" style="margin-top:6px">Acesse sua área exclusiva.</p>
+    <form id="f" novalidate>
+      <div id="extra" class="hide">
+        <label for="nome">Seu nome</label><input id="nome" autocomplete="name">
+        <label for="tel">WhatsApp</label><input id="tel" type="tel" inputmode="tel" placeholder="(11) 90000-0000" autocomplete="tel">
+      </div>
+      <label for="em">E-mail</label><input id="em" type="email" autocomplete="email" required>
+      <div id="pwbox"><label for="pw">Senha</label><input id="pw" type="password" autocomplete="current-password" minlength="6"></div>
+      <button type="submit" id="go">Entrar</button>
+    </form>
+    <div class="c">
+      <button class="lnk" id="swap" type="button">Ainda não tenho conta</button><br>
+      <button class="lnk" id="forgot" type="button">Esqueci minha senha</button>
+    </div>
+    <div class="msg" id="m" role="status"></div>
+  </div>
+</section>
+
+<section id="newpw" class="hide">
+  <div class="card"><h1 style="font-size:24px">Nova senha</h1>
+    <form id="fnp"><label for="np">Nova senha</label><input id="np" type="password" minlength="6" autocomplete="new-password"><button type="submit">Salvar senha</button></form>
+    <div class="msg" id="m2"></div></div>
+</section>
+
+<section id="home" class="hide">
+  <h2 id="ola" style="font-size:26px;margin-bottom:14px"></h2>
+  <div class="card c"><span class="tag">Seus pontos</span><div class="pts" id="pts" style="margin-top:12px">0</div>
+    <p class="mut" style="margin-top:8px">Os pontos são lançados pela Bella após cada atendimento.</p></div>
+  <div class="card" id="ret"><span class="tag">Próximo retorno</span><p id="rett" style="margin-top:10px"></p></div>
+  <a class="btn" id="agendar" href="#" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  <a class="btn sec" href="../index.html">Conhecer os serviços</a>
+  <div class="card" style="margin-top:22px"><h2 style="font-size:20px;margin-bottom:8px">Seus atendimentos</h2><div id="hist"></div></div>
+  <div class="card hide" id="ios"><p class="mut">Para instalar no iPhone: abra no Safari, toque em Compartilhar e em "Adicionar à Tela de Início".</p></div>
+  <button class="lnk" id="inst" type="button" style="display:none">Instalar o app no celular</button>
+  <div class="c"><button class="lnk" id="out" type="button">Sair da conta</button></div>
+</section>
+</div>
+
+<script src="supabase.js"></script>
+<script>
+var SB_URL='https://yerwtkojpectarnaphfg.supabase.co',SB_KEY='sb_publishable_CAx70tVSx1JlkwOtpJN3Dg_h7MqH6U4';
+var sb=supabase.createClient(SB_URL,SB_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+var $=function(i){return document.getElementById(i)},mode='login',ZAP='https://wa.me/5511952412499?text=';
+function show(id){['auth','newpw','home'].forEach(function(x){$(x).classList.toggle('hide',x!==id)})}
+function msg(el,t,err){$(el).textContent=t||'';$(el).className='msg'+(err?' err':'')}
+function setMode(m){mode=m;var s=m==='signup';
+ $('extra').classList.toggle('hide',!s);$('pwbox').classList.toggle('hide',m==='forgot');
+ $('tit').textContent=s?'Criar conta':m==='forgot'?'Recuperar senha':'Entrar';
+ $('go').textContent=s?'Criar minha conta':m==='forgot'?'Enviar link':'Entrar';
+ $('swap').textContent=s?'Já tenho conta':'Ainda não tenho conta';
+ $('pw').autocomplete=s?'new-password':'current-password';msg('m','')}
+$('swap').onclick=function(){setMode(mode==='signup'?'login':'signup')};
+$('forgot').onclick=function(){setMode('forgot')};
+$('f').onsubmit=async function(e){e.preventDefault();var em=$('em').value.trim(),pw=$('pw').value;
+ if(!em){return msg('m','Informe seu e-mail.',1)}
+ $('go').disabled=true;msg('m','Aguarde...');var r;
+ var back=location.origin+'/app/';
+ if(mode==='signup'){
+  if(pw.length<6){$('go').disabled=false;return msg('m','A senha precisa ter 6 ou mais caracteres.',1)}
+  r=await sb.auth.signUp({email:em,password:pw,options:{emailRedirectTo:back,data:{nome:$('nome').value.trim(),telefone:$('tel').value.trim()}}});
+  if(!r.error&&!r.data.session)msg('m','Conta criada! Confirme pelo e-mail que enviamos para entrar.');
+ }else if(mode==='forgot'){
+  r=await sb.auth.resetPasswordForEmail(em,{redirectTo:back});
+  if(!r.error)msg('m','Se o e-mail existir, enviamos o link para redefinir a senha.');
+ }else{r=await sb.auth.signInWithPassword({email:em,password:pw})}
+ $('go').disabled=false;
+ if(r&&r.error)msg('m',r.error.message.indexOf('Invalid login')>-1?'E-mail ou senha incorretos.':r.error.message.indexOf('not confirmed')>-1?'Confirme seu e-mail antes de entrar.':'Não foi possível concluir. Tente novamente.',1)};
+$('fnp').onsubmit=async function(e){e.preventDefault();var r=await sb.auth.updateUser({password:$('np').value});
+ if(r.error)msg('m2','Não foi possível salvar. Use 6 ou mais caracteres.',1);else{msg('m2','Senha alterada!');loadHome()}};
+$('out').onclick=async function(){await sb.auth.signOut();show('auth');setMode('login')};
+function fd(d){if(!d)return'';var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]}
+async function loadHome(){
+ var u=(await sb.auth.getUser()).data.user;if(!u)return show('auth');
+ var p=(await sb.from('profiles').select('nome').eq('id',u.id).maybeSingle()).data;
+ var nome=(p&&p.nome)||'';$('ola').textContent=nome?'Olá, '+nome.split(' ')[0]+'!':'Olá!';
+ $('agendar').href=ZAP+encodeURIComponent('Olá! Sou '+(nome||'cliente')+' do Bella Club e quero agendar ✨');
+ var a=(await sb.from('atendimentos').select('servico,unidade,data,pontos,retorno_em').order('data',{ascending:false})).data||[];
+ var tot=0,ret=null;a.forEach(function(x){tot+=x.pontos||0;if(x.retorno_em&&(!ret||x.retorno_em>ret))ret=x.retorno_em});
+ $('pts').textContent=tot;
+ $('rett').textContent=ret?'Sugerido: '+fd(ret):'A Bella vai indicar após o seu próximo atendimento.';
+ var h=$('hist');h.textContent='';
+ if(!a.length){var e=document.createElement('p');e.className='mut';e.textContent='Seus atendimentos aparecerão aqui.';h.appendChild(e)}
+ a.forEach(function(x){var d=document.createElement('div');d.className='item';var b=document.createElement('b');b.textContent=x.servico;
+  var s=document.createElement('span');s.textContent=fd(x.data)+(x.unidade?' · '+x.unidade:'')+(x.pontos?' · +'+x.pontos+' pts':'');d.appendChild(b);d.appendChild(s);h.appendChild(d)});
+ show('home')}
+sb.auth.onAuthStateChange(function(ev,s){if(ev==='PASSWORD_RECOVERY')show('newpw');else if(s&&ev!=='TOKEN_REFRESHED'&&ev!=='USER_UPDATED')loadHome();else if(!s)show('auth')});
+sb.auth.getSession().then(function(r){if(r.data.session)loadHome();else show('auth')});
+var dp;window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();dp=e;$('inst').style.display='inline'});
+$('inst').onclick=async function(){if(dp){dp.prompt();dp=null;$('inst').style.display='none'}};
+if(/iphone|ipad/i.test(navigator.userAgent)&&!navigator.standalone)$('ios').classList.remove('hide');
+if('serviceWorker' in navigator)window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js')});
+</script>
+</body>
+</html>
