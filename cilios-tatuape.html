@@ -66,25 +66,23 @@
     </script>
     
     <link rel="preload" href="trabalho-cilios-volume-brasileiro-tatuape-m.webp" as="image" type="image/webp" fetchpriority="high">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+<link rel="preload" href="fonts/playfair-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'Playfair Display';font-style:normal;font-display:optional;font-weight:400 900;src:url(fonts/playfair-display-latin-wght-normal.woff2) format('woff2-variations'),url(fonts/playfair-display-latin-wght-normal.woff2) format('woff2');}@font-face{font-family:'Montserrat';font-style:normal;font-display:optional;font-weight:100 900;src:url(fonts/montserrat-latin-wght-normal.woff2) format('woff2-variations'),url(fonts/montserrat-latin-wght-normal.woff2) format('woff2');}</style>
 <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     :root {
-        --branco:#fefdfb; --creme:#f7f3ee; --nude:#e8ddd2; --dourado:#8a6a2e; --dourado-esc:#6f5322;
-        --preto:#2a2420; --cinza:#6b6158; --cinza-claro:#b5aca2; --verde-zap:#15803d; --rosa:#d4a5a0;
+        --branco:#0c0a09; --creme:#161210; --nude:rgba(201,165,90,0.18); --dourado:#c9a55a; --dourado-esc:#e3c989;
+        --preto:#f5efe6; --cinza:#a8a094; --cinza-claro:#b5aca2; --verde-zap:#15803d; --rosa:#d4a5a0;
     }
-    body { font-family:'Jost',sans-serif; background:var(--branco); color:var(--preto); line-height:1.7; overflow-x:hidden; }
+    body { font-family:'Montserrat',sans-serif; background:var(--branco); color:var(--preto); line-height:1.7; overflow-x:hidden; }
     .wrap { max-width:1080px; margin:0 auto; padding:0 26px; }
-    h1,h2,h3 { font-family:'Cormorant Garamond',serif; font-weight:600; line-height:1.15; }
+    h1,h2,h3 { font-family:'Playfair Display',serif; font-weight:600; line-height:1.15; }
     a { text-decoration:none; color:inherit; }
 
-    nav { position:sticky; top:0; z-index:100; background:rgba(254,253,251,0.94); backdrop-filter:blur(10px); border-bottom:1px solid var(--nude); }
+    nav { position:sticky; top:0; z-index:100; background:rgba(12,10,9,0.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--nude); }
     .nav-in { max-width:1080px; margin:0 auto; padding:18px 26px; display:flex; justify-content:space-between; align-items:center; }
-    .logo { font-family:'Cormorant Garamond',serif; font-size:26px; font-weight:700; letter-spacing:1px; color:var(--preto); }
+    .logo { font-family:'Playfair Display',serif; font-size:26px; font-weight:700; letter-spacing:1px; color:var(--preto); }
     .logo span { color:var(--dourado); }
     .nav-links { display:flex; gap:26px; font-size:12px; letter-spacing:1.5px; text-transform:uppercase; }
     .nav-links a { color:var(--cinza); transition:color .3s; }
@@ -94,11 +92,11 @@
     .hero { display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:center; padding:60px 0; }
     @media(max-width:860px){ .hero{ grid-template-columns:1fr; text-align:center; gap:36px; } }
     .hero .eyebrow { display:inline-block; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--dourado); margin-bottom:20px; }
-    .hero h1 { font-size:clamp(38px,6vw,64px); margin-bottom:22px; font-weight:600; }
+    .hero h1 { font-size:clamp(34px,6vw,58px); margin-bottom:22px; font-weight:700; }
     .hero h1 em { font-style:italic; color:var(--dourado); }
     .hero p { font-size:17px; color:var(--cinza); margin-bottom:30px; max-width:500px; }
     @media(max-width:860px){ .hero p{ margin-left:auto; margin-right:auto; } }
-    .hero-foto img { width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:6px; box-shadow:0 30px 60px rgba(42,36,32,0.15); display:block; }
+    .hero-foto img { width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:6px; box-shadow:0 30px 60px rgba(0,0,0,0.5); display:block; }
     .btn-zap { display:inline-flex; align-items:center; gap:10px; background:var(--verde-zap); color:#fff; font-weight:600; font-size:15px; padding:16px 38px; border-radius:50px; transition:transform .25s, box-shadow .25s; letter-spacing:0.5px; }
     .btn-zap:hover { transform:scale(1.04); box-shadow:0 12px 30px rgba(37,211,102,0.3); }
     .zap-svg { width:20px; height:20px; fill:currentColor; }
@@ -120,7 +118,7 @@
 
     .tecnicas { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
     @media(max-width:820px){ .tecnicas{ grid-template-columns:1fr; max-width:440px; margin:0 auto; } }
-    .tec-card { background:var(--branco); border:1px solid var(--nude); border-radius:10px; padding:32px 28px; transition:transform .35s, box-shadow .35s; }
+    .tec-card { background:var(--creme); border:1px solid var(--nude); border-radius:10px; padding:32px 28px; transition:transform .35s, box-shadow .35s; }
     .tec-card:hover { transform:translateY(-6px); box-shadow:0 20px 40px rgba(42,36,32,0.08); }
     .tec-card .tag { font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--dourado); }
     .tec-card h3 { font-size:26px; margin:8px 0 12px; }
@@ -129,12 +127,12 @@
     .comparativo { max-width:760px; margin:40px auto 0; }
     .comparativo table { width:100%; border-collapse:collapse; font-size:15px; }
     .comparativo th, .comparativo td { padding:15px 18px; text-align:left; border-bottom:1px solid var(--nude); }
-    .comparativo th { font-family:'Cormorant Garamond',serif; font-size:19px; color:var(--dourado-esc); font-weight:600; }
+    .comparativo th { font-family:'Playfair Display',serif; font-size:19px; color:var(--dourado-esc); font-weight:600; }
     .comparativo td:first-child { font-weight:500; color:var(--preto); }
 
     .split { display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center; padding:20px 0; }
     @media(max-width:820px){ .split{ grid-template-columns:1fr; gap:32px; } }
-    .split img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:6px; box-shadow:0 24px 50px rgba(42,36,32,0.12); }
+    .split img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:6px; box-shadow:0 24px 50px rgba(0,0,0,0.45); }
     .split h2 { font-size:clamp(28px,4vw,40px); margin-bottom:16px; }
     .split h2 em { font-style:italic; color:var(--dourado); }
     .split p { color:var(--cinza); margin-bottom:14px; font-size:15.5px; }
@@ -144,7 +142,7 @@
     @media(max-width:820px){ .benef-grid{ grid-template-columns:1fr 1fr; } }
     @media(max-width:520px){ .benef-grid{ grid-template-columns:1fr; max-width:320px; margin:0 auto; } }
     .benef-item { text-align:center; }
-    .benef-item .num { font-family:'Cormorant Garamond',serif; font-size:40px; color:var(--dourado); line-height:1; }
+    .benef-item .num { font-family:'Playfair Display',serif; font-size:40px; color:var(--dourado); line-height:1; }
     .benef-item .lbl { font-size:13px; letter-spacing:0.5px; color:var(--cinza); margin-top:8px; }
 
     .resumo-ia { background:var(--creme); border-left:3px solid var(--dourado); border-radius:6px; padding:24px 28px; margin:30px auto; max-width:760px; }
@@ -156,8 +154,8 @@
     .faq-item h3 { font-size:23px; color:var(--preto); margin-bottom:8px; }
     .faq-item p { font-size:15px; color:var(--cinza); }
 
-    .cta-final { text-align:center; padding:70px 0; background:var(--preto); color:var(--branco); }
-    .cta-final h2 { font-size:clamp(30px,4.5vw,48px); margin-bottom:16px; color:var(--branco); }
+    .cta-final { text-align:center; padding:70px 0; background:var(--creme); color:var(--preto); border-top:1px solid var(--nude); }
+    .cta-final h2 { font-size:clamp(30px,4.5vw,48px); margin-bottom:16px; color:var(--preto); }
     .cta-final h2 em { font-style:italic; color:#d9b97a; }
     .cta-final p { color:var(--cinza-claro); margin-bottom:30px; font-size:16px; }
 
@@ -165,6 +163,19 @@
     .nav-links a, .logo { text-decoration:none !important; }
     footer { text-align:center; padding:40px 26px; border-top:1px solid var(--nude); font-size:13px; color:var(--cinza); }
     footer a { color:var(--dourado-esc); }
+
+    .fundadora { display:grid; grid-template-columns:260px 1fr; gap:30px; max-width:860px; margin:0 auto; align-items:center; }
+    .fundadora img { width:100%; height:auto; border-radius:12px; border:1px solid rgba(201,165,90,0.3); display:block; }
+    .fundadora h2 { font-size:clamp(26px,3.6vw,36px); margin-bottom:14px; }
+    .fundadora h2 em { font-style:italic; color:var(--dourado); }
+    .fundadora p { color:#cfc7bd; font-size:15.5px; margin-bottom:12px; }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+    .tags span { font-size:11px; letter-spacing:1px; text-transform:uppercase; border:1px solid rgba(201,165,90,0.4); color:var(--dourado-esc); padding:6px 12px; border-radius:50px; }
+    @media(max-width:640px){ .fundadora{grid-template-columns:1fr;} .fundadora img{max-width:260px;margin:0 auto;} }
+    .gal { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; max-width:980px; margin:0 auto; }
+    .gal figure { margin:0; border-radius:12px; overflow:hidden; background:var(--creme); aspect-ratio:4/5; }
+    .gal img { width:100%; height:100%; object-fit:cover; display:block; }
+    @media(max-width:640px){ .gal{grid-template-columns:1fr 1fr;} }
 </style>
 </head>
 <body>
@@ -287,6 +298,32 @@
 
     <section class="section">
         <div class="wrap">
+            <div class="section-head">
+                <span class="eyebrow">Resultados reais</span>
+                <h2>Cílios feitos <em>aqui</em></h2>
+            </div>
+            <div class="gal"><figure><picture><source srcset="trabalho-cilios-fio-a-fio-tatuape-m.webp" type="image/webp"><img src="trabalho-cilios-fio-a-fio-tatuape.jpg" alt="Extensão de cílios fio a fio, resultado real no Bella Beauty Club, Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="galeria-cilios-tatuape-1-m.webp" type="image/webp"><img src="galeria-cilios-tatuape-1.jpg" alt="Cílios com efeito natural no Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="galeria-cilios-tatuape-2-m.webp" type="image/webp"><img src="galeria-cilios-tatuape-2.jpg" alt="Extensão de cílios, resultado real no Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="galeria-cilios-tatuape-4-m.webp" type="image/webp"><img src="galeria-cilios-tatuape-4.jpg" alt="Olhar natural com extensão de cílios no Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="trabalho-sobrancelhas-lash-lifting-tatuape-m.webp" type="image/webp"><img src="trabalho-sobrancelhas-lash-lifting-tatuape.jpg" alt="Lash lifting, resultado real no Tatuapé" loading="lazy" width="600" height="750"></picture></figure><figure><picture><source srcset="trabalho-cilios-volume-brasileiro-tatuape-m.webp" type="image/webp"><img src="trabalho-cilios-volume-brasileiro-tatuape.jpg" alt="Volume brasileiro, resultado real no Bella Beauty Club" loading="lazy" width="600" height="750"></picture></figure></div>
+            <p style="text-align:center;margin-top:20px;font-size:14px;"><a style="color:var(--dourado)" href="cilios-sobrancelhas-zona-leste-sp.html">Atendemos toda a Zona Leste →</a> · <a style="color:var(--dourado)" href="combo-sobrancelha-cilios-tatuape.html">Combo sobrancelha + cílios →</a></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="fundadora">
+                <picture><source srcset="foto-fundadora.webp" type="image/webp"><img src="foto-fundadora.jpg" alt="Fundadora do Bella Beauty Club, especialista em cílios e sobrancelhas com experiência como master na Natalia Beauty" loading="lazy" width="800" height="1200"></picture>
+                <div>
+                    <span class="eyebrow" style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--dourado)">Quem cuida de você</span>
+                    <h2>Experiência de <em>quem treinou</em> profissionais</h2>
+                    <p>A fundadora do Bella Beauty Club trabalhou com a <strong style="color:var(--preto)">Natalia Beauty</strong>, referência em sobrancelhas e olhar no Brasil, onde era <strong style="color:var(--preto)">master</strong> e treinava as profissionais da marca.</p>
+                    <p>Essa bagagem se traduz em avaliação criteriosa do seu olhar, isolamento fio a fio e acabamento natural, que respeita a saúde dos seus cílios.</p>
+                    <div class="tags"><span>Trabalhou com a Natalia Beauty</span><span>Master e treinadora</span><span>Nota 5,0 no Google</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrap">
             <div class="resumo-ia">
                 <strong>Em poucas palavras</strong>
                 <p>O Bella Beauty Club faz extensão de cílios no Tatuapé (fio a fio, volume brasileiro, egípcio, americano, híbrido e lash lifting), a 5 minutos do Metrô e ao lado do Shopping Metrô Tatuapé. Atende Tatuapé, Anália Franco, Vila Carrão e Mooca, com nota 5,0 no Google e avaliação gratuita pelo WhatsApp.</p>
@@ -320,7 +357,8 @@
     </main>
     <footer>
         <p>© 2026 Bella Beauty Club · Tatuapé, São Paulo · <a href="https://wa.me/5511952412499">(11) 95241-2499</a></p>
-        <p style="margin-top:8px;">R. Bom Sucesso, 220 · Edifício Platina · ao lado do Shopping Metrô Tatuapé · <a href="https://instagram.com/bellaabeauti">@bellaabeauti</a></p>
+        <p style="margin-top:8px;">Rua Bom Sucesso, 220, Conjunto 17 · Edifício Platina · Tatuapé · <a href="https://instagram.com/bellaabeauti">@bellaabeauti</a> · <a href="https://www.facebook.com/people/Bella-Beauty-Club/61588236459095/" rel="noopener">Facebook</a></p>
+        <p style="margin-top:8px;"><a href="index.html">Home</a> · <a href="cilios-sobrancelhas-zona-leste-sp.html">Zona Leste</a> · <a href="cilios-sobrancelhas-moema.html">Moema</a> · <a href="cursos.html">Curso de cílios</a> · <a href="valores.html">Valores</a></p>
     </footer>
 </body>
 </html>
